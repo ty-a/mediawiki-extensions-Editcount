@@ -18,7 +18,13 @@
 	},
 	"AutoloadClasses": {
 		"Editcount": "Editcount_body.php",
-		"EditcountHTML": "Editcount_body.php"
+		"EditcountHTML": "Editcount_body.php",
+		"EditcountHooks": "Editcount.hooks.php"
+	},
+	"Hooks": { 
+		"SkinTemplateNavigation": [
+			"EditcountHooks::onSkinTemplateNavigation"
+		]
 	},
 	"manifest_version": 1
 }

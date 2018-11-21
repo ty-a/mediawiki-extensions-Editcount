@@ -8,5 +8,6 @@
 	"editcount-desc": "Displays [[Special:Editcount|edit count]] of a user",
 	"editcount_username": "User:",
 	"editcount_submit": "Submit",
-	"editcount_total": "Total"
+	"editcount_total": "Total",
+	"editcount_tab": "$1 {{PLURAL:$1|edit|edits}}"
 }
