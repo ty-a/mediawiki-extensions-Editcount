@@ -14,11 +14,9 @@ class EditcountHooks {
 	if ( $edits == null ) {
 		$edits = 0;
 	}
-	$request = $skinTemplate->getRequest();
-	$action = $request->getText( 'action' );
 	$links['namespaces']['editcount'] = array(
 		'text' => wfMessage( 'editcount_tab' )->params( $edits )->escaped(),
-		'href' => SpecialPage::getTitleFor( 'Editcount' )->getLocalUrl( ['username' => $user] )
+		'href' => SpecialPage::getTitleFor( 'Editcount' )->getLocalUrl( ['username' => $user->getName()] )
 	);
 	return true;
 }
